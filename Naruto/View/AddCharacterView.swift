@@ -43,12 +43,12 @@ struct AddCharacter: View {
                        TextField("Friend/Enemy", text: $assistant)
                    }.foregroundStyle(.primary)
 
-                   Section(header: Text("Навыки")) {
-                       Stepper("Тайдзюцу: \(taidzusu)", value: $taidzusu, in: 0...100)
-                       Stepper("Ниндзюцу: \(ninjutsu)", value: $ninjutsu, in: 0...100)
-                       Stepper("Гендзюцу: \(genjutsu)", value: $genjutsu, in: 0...100)
-                       Stepper("Сила: \(power)", value: $power, in: 0...100)
-                       Stepper("Интеллект: \(intelligence)", value: $intelligence, in: 0...100)
+                   Section(header: Text("Skills")) {
+                       Stepper("Taijutsu: \(taidzusu)", value: $taidzusu, in: 0...100)
+                       Stepper("Ninjutsu: \(ninjutsu)", value: $ninjutsu, in: 0...100)
+                       Stepper("Genjutsu: \(genjutsu)", value: $genjutsu, in: 0...100)
+                       Stepper("Power: \(power)", value: $power, in: 0...100)
+                       Stepper("Intelligence: \(intelligence)", value: $intelligence, in: 0...100)
                    }
 
                    Section(header: Text("Изображение")) {
