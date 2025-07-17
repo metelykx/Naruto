@@ -69,7 +69,7 @@ struct AddCharacter: View {
                        }
                    }
                }
-           }
+           }.backgroundStyle(Color(.systemBackground))
        }
     
     private func addCharacter() {
