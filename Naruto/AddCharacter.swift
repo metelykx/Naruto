@@ -71,6 +71,9 @@ struct AddCharacter: View {
        }
     
     private func addCharacter() {
+        let newItem = Item(context: viewContext)
+        
+        newItem.name = name
         
     }
 }
