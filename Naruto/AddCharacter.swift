@@ -32,7 +32,9 @@ struct AddCharacter: View {
     
     var body: some View {
         NavigationView {
-            
+            Form {
+                
+            }
         }
     }
 }
