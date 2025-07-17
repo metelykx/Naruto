@@ -16,6 +16,10 @@ struct TabBarView: View {
             
             AddCharacter().tabItem{ Label("Add Heroes", systemImage: "person.crop.rectangle.badge.plus.fill")
             }
+            
+            SettingsView().tabItem {
+                Label("Settings", systemImage: "gearshape.fill")
+            }
         }
     }
 }
