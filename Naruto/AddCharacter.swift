@@ -25,6 +25,9 @@ struct AddCharacter: View {
     @State private var imageURL: String = ""
     @State private var specialPower: String = ""
     
+    
+    @State private var taidzusu: Int64 = 0
+    
     var body: some View {
         Text("dd")
     }
