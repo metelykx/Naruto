@@ -17,7 +17,6 @@ struct AddCharacter: View {
     @Environment(\.dismiss) private var dismiss
     
     
-    
     @State private var name: String = ""
     @State private var clan: String = ""
     @State private var element: String = ""
@@ -33,6 +32,8 @@ struct AddCharacter: View {
     @State private var intelligence: Int64 = 0
     
     var body: some View {
-        Text("dd")
+        NavigationView {
+            
+        }
     }
 }
