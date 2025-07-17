@@ -55,16 +55,16 @@ struct AddCharacter: View {
                        TextField("URL image", text: $imageURL)
                    }
                }.foregroundStyle(.primary)
-               .navigationTitle("Новый персонаж")
+               .navigationTitle("New character")
                .toolbar {
                    ToolbarItem(placement: .confirmationAction) {
-                       Button("Сохранить") {
+                       Button("Save") {
                            addCharacter()
                        }
                    }
 
                    ToolbarItem(placement: .cancellationAction) {
-                       Button("Отмена") {
+                       Button("Cancel") {
                            dismiss()
                        }
                    }
