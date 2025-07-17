@@ -49,7 +49,7 @@ struct AddCharacter: View {
                        Stepper("Genjutsu: \(genjutsu)", value: $genjutsu, in: 0...100)
                        Stepper("Power: \(power)", value: $power, in: 0...100)
                        Stepper("Intelligence: \(intelligence)", value: $intelligence, in: 0...100)
-                   }
+                   }.foregroundStyle(.primary)
 
                    Section(header: Text("Изображение")) {
                        TextField("URL изображения", text: $imageURL)
