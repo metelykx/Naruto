@@ -13,6 +13,9 @@ struct TabBarView: View {
             ContentView().tabItem {
                 Label("Home", systemImage: "house")
             }
+            
+            AddCharacter().tabItem{ Label("Add Heroes", systemImage: "person.crop.rectangle.badge.plus.fill")
+            }
         }
     }
 }
