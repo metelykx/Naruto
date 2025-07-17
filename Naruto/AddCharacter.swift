@@ -40,6 +40,7 @@ struct AddCharacter: View {
                        TextField("Деревня", text: $village)
                        TextField("Элемент", text: $element)
                        TextField("Спец. способность", text: $specialPower)
+                       TextField("Друг/Враг", text: $assistant)
                    }
 
                    Section(header: Text("Навыки")) {
