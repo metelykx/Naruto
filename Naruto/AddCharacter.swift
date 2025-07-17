@@ -23,6 +23,7 @@ struct AddCharacter: View {
     @State private var village: String = ""
     @State private var imageURL: String = ""
     @State private var specialPower: String = ""
+    @State private var assistant: String = ""
     
     @State private var taidzusu: Int64 = 0
     @State private var ninjutsu: Int64 = 0
@@ -74,6 +75,6 @@ struct AddCharacter: View {
         let newItem = Item(context: viewContext)
         
         newItem.name = name
-        
+        newItem.clan = clan
     }
 }
