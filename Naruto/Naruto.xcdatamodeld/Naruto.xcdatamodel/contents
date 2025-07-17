@@ -6,6 +6,7 @@
         <attribute name="imageURL" optional="YES" attributeType="String"/>
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="power" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="specialPower" optional="YES" attributeType="String"/>
         <attribute name="village" optional="YES" attributeType="String"/>
     </entity>
 </model>
