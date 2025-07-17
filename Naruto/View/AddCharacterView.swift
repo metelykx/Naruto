@@ -41,7 +41,7 @@ struct AddCharacter: View {
                        TextField("Элемент", text: $element)
                        TextField("Спец. способность", text: $specialPower)
                        TextField("Друг/Враг", text: $assistant)
-                   }
+                   }.foregroundStyle(.primary)
 
                    Section(header: Text("Навыки")) {
                        Stepper("Тайдзюцу: \(taidzusu)", value: $taidzusu, in: 0...100)
