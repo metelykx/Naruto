@@ -23,6 +23,7 @@ struct AddCharacter: View {
     @State private var element: String = ""
     @State private var village: String = ""
     @State private var imageURL: String = ""
+    @State private var specialPower: String = ""
     
     var body: some View {
         Text("dd")
