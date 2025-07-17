@@ -9,7 +9,8 @@ import SwiftUI
 
 struct AddCharacter: View {
     
-    
+
+    //for get info from CoreData and save info 
     @Environment(\.managedObjectContext) private var viewContext
 
     var body: some View {
