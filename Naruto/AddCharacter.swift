@@ -16,6 +16,12 @@ struct AddCharacter: View {
     //you can close screen after add the heroes
     @Environment(\.dismiss) private var dismiss
     
+    
+    
+    @State private var name: String = ""
+    
+    
+    
     var body: some View {
         Text("dd")
     }
