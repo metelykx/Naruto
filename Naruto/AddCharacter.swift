@@ -77,10 +77,15 @@ struct AddCharacter: View {
         
         newItem.name = name
         newItem.clan = clan
-        newItem.gendzusu = genjutsu
-        newItem.assistant = assistant
-        newItem.imageURL = imageURL
-        newItem.taidzusu = taidzusu
+        newItem.element = element
         newItem.village = village
+        newItem.imageURL = imageURL
+        newItem.specialPower = specialPower
+
+        newItem.taidzusu = taidzusu
+        newItem.ninjutsu = ninjutsu
+        newItem.gendzusu = genjutsu
+        newItem.power = power
+        newItem.intelligence = intelligence
     }
 }
