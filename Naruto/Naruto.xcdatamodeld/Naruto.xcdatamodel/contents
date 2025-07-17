@@ -3,6 +3,7 @@
     <entity name="Item" representedClassName="Item" syncable="YES" codeGenerationType="class">
         <attribute name="clan" optional="YES" attributeType="String"/>
         <attribute name="element" optional="YES" attributeType="String"/>
+        <attribute name="gendzusu" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="imageURL" optional="YES" attributeType="String"/>
         <attribute name="intelligence" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
