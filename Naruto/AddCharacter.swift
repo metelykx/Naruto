@@ -87,5 +87,14 @@ struct AddCharacter: View {
         newItem.gendzusu = genjutsu
         newItem.power = power
         newItem.intelligence = intelligence
+        
+        newItem.id = Int64(UUID().hashValue)
+        
+        do {
+            try viewContext.save()
+            dismiss()
+        } catch {
+            print("❌ Ошибка при сохранении: \(error.localizedDescription)")
+        }
     }
 }
