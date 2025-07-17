@@ -79,5 +79,6 @@ struct AddCharacter: View {
         newItem.clan = clan
         newItem.gendzusu = genjutsu
         newItem.assistant = assistant
+        newItem.imageURL = imageURL
     }
 }
