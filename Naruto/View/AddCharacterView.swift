@@ -34,10 +34,10 @@ struct AddCharacter: View {
     var body: some View {
            NavigationView {
                Form {
-                   Section(header: Text("Основная информация")) {
-                       TextField("Имя", text: $name)
-                       TextField("Клан", text: $clan)
-                       TextField("Деревня", text: $village)
+                   Section(header: Text("Basic information")) {
+                       TextField("Name", text: $name)
+                       TextField("Clan", text: $clan)
+                       TextField("Village", text: $village)
                        TextField("Элемент", text: $element)
                        TextField("Спец. способность", text: $specialPower)
                        TextField("Друг/Враг", text: $assistant)
