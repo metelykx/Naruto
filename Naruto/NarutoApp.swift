@@ -13,7 +13,7 @@ struct NarutoApp: App {
 
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AddCharacter()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }
