@@ -51,10 +51,10 @@ struct AddCharacter: View {
                        Stepper("Intelligence: \(intelligence)", value: $intelligence, in: 0...100)
                    }.foregroundStyle(.primary)
 
-                   Section(header: Text("Изображение")) {
-                       TextField("URL изображения", text: $imageURL)
+                   Section(header: Text("Image")) {
+                       TextField("URL image", text: $imageURL)
                    }
-               }
+               }.foregroundStyle(.primary)
                .navigationTitle("Новый персонаж")
                .toolbar {
                    ToolbarItem(placement: .confirmationAction) {
