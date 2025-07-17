@@ -81,6 +81,6 @@ struct AddCharacter: View {
         newItem.assistant = assistant
         newItem.imageURL = imageURL
         newItem.taidzusu = taidzusu
-        
+        newItem.village = village
     }
 }
