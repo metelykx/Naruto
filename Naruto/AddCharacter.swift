@@ -30,6 +30,7 @@ struct AddCharacter: View {
     @State private var ninjutsu: Int64 = 0
     @State private var genjutsu: Int64 = 0
     @State private var power: Int64 = 0
+    @State private var intelligence: Int64 = 0
     
     var body: some View {
         Text("dd")
