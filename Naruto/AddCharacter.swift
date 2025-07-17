@@ -19,7 +19,7 @@ struct AddCharacter: View {
     
     
     @State private var name: String = ""
-    
+    @State private var clan: String = ""
     
     
     var body: some View {
