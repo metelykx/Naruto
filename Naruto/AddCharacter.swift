@@ -8,6 +8,10 @@
 import SwiftUI
 
 struct AddCharacter: View {
+    
+    
+    @Environment(\.managedObjectContext) private var viewContext
+
     var body: some View {
         Text("dd")
     }
