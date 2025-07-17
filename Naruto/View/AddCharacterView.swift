@@ -38,9 +38,9 @@ struct AddCharacter: View {
                        TextField("Name", text: $name)
                        TextField("Clan", text: $clan)
                        TextField("Village", text: $village)
-                       TextField("Элемент", text: $element)
-                       TextField("Спец. способность", text: $specialPower)
-                       TextField("Друг/Враг", text: $assistant)
+                       TextField("Element", text: $element)
+                       TextField("Special Power", text: $specialPower)
+                       TextField("Friend/Enemy", text: $assistant)
                    }.foregroundStyle(.primary)
 
                    Section(header: Text("Навыки")) {
