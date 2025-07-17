@@ -11,7 +11,11 @@ struct TabBarView: View {
     var body: some View {
         TabView {
             ContentView().tabItem {
-                Label("Home", systemImage: "house")
+                Label("Friends", systemImage: "figure.2")
+            }
+            
+            EnemiesView().tabItem {
+                Label("Enemies", systemImage: "figure.fall")
             }
             
             AddCharacter().tabItem{ Label("Add Heroes", systemImage: "person.crop.rectangle.badge.plus.fill")
