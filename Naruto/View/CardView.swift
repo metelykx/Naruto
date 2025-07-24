@@ -13,6 +13,7 @@ struct CardView: View {
         GeometryReader { geometry in
             VStack {
                 ZStack {
+                    Rectangle()
                     
                     Rectangle()
                         .cornerRadius(20)
