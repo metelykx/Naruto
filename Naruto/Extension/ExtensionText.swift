@@ -10,6 +10,10 @@ import SwiftUI
 
 extension Text {
     
+    func colorText() -> Color {
+        
+    }
+    
     //title
     func titleFont() -> some View {
         self
