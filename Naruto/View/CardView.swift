@@ -10,11 +10,19 @@ import SwiftUI
 struct CardView: View {
     
     var body: some View {
-        
-        Rectangle()
+        GeometryReader { geometry in
+            VStack {
+                
+                Rectangle()
+                    .cornerRadius(20)
+                    .frame(height: geometry.size.height / 2)
+                    .padding(.top)
+                
+                
+            }
+        }
     }
 }
-
 
 #Preview {
     CardView()
