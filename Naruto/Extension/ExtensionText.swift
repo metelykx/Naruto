@@ -10,7 +10,7 @@ import SwiftUI
 
 extension Text {
     
-    //comment for title
+    //title
     func titleFont() -> some View {
         self
             .foregroundStyle(.primary)
