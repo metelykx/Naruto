@@ -16,6 +16,12 @@ struct SettingsView: View {
                         Form {
                             Section(header: Text("Text Color")) {
                                 Toggle("Use gray Text", isOn: $useGray)
+                                    .toggleStyle(SwitchToggleStyle(tint: .green))
+                                        .contentShape(Rectangle())
+                                        .padding()
+                                        .background(useGray ? Color.green.opacity(0.1) : Color.clear)
+                                        .cornerRadius(12)
+                                        .animation(.spring(), value: useGray)
                             }
                         }
                         .navigationTitle(Text("Settings"))
