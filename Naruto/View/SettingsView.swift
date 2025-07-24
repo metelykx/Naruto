@@ -10,9 +10,18 @@ import SwiftUI
 struct SettingsView: View {
     
     @AppStorage("useGrayText") var useGray = false
+    
     var body: some View {
-        Text("Settings")
-    }
+            NavigationView {
+                        Form {
+                            Section(header: Text("Text Color")) {
+                                Toggle("Use gray Text", isOn: $useGray)
+                            }
+                        }
+                        .navigationTitle(Text("Settings"))
+                        
+            }
+        }
 }
 
 
