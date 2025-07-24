@@ -11,7 +11,7 @@ import SwiftUI
 extension Text {
     
     func colorText() -> Color {
-        
+        let useGray = UserDefaults.standard.bool(forKey: "useGrayText")
     }
     
     //title
