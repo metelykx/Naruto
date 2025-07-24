@@ -14,7 +14,8 @@ struct CardView: View {
             VStack {
                 ZStack {
                     Rectangle()
-                    
+                        .background(Color(.gray))
+                        .frame(height: geometry.size.height / 3)
                     Rectangle()
                         .cornerRadius(20)
                         .frame(height: geometry.size.height / 2)
