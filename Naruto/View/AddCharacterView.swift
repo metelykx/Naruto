@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct AddCharacter: View {
+struct AddCharacterView: View {
     
 
     //for get info from CoreData and save info
