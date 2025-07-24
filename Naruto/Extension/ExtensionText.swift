@@ -8,9 +8,10 @@
 import Foundation
 import SwiftUI
 
+//MARK: Extensions
 extension Text {
     
-    //func for change color 
+    //func for change color
     func colorText() -> Color {
         let useGray = UserDefaults.standard.bool(forKey: "useGrayText")
         if useGray {
