@@ -10,7 +10,7 @@ import SwiftUI
 
 extension Text {
     
-    
+    //comment for title
     func titleFont() -> some View {
         self
             .foregroundStyle(.primary)
@@ -18,7 +18,7 @@ extension Text {
             .opacity(0.8)
     }
     
-    //comment for description
+    //description
     func descriptionFont() -> some View {
         self
             .foregroundStyle(.primary)
