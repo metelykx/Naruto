@@ -12,6 +12,11 @@ extension Text {
     
     func colorText() -> Color {
         let useGray = UserDefaults.standard.bool(forKey: "useGrayText")
+        if useGray {
+            return .white
+        } else {
+            return .gray
+        }
     }
     
     //title
