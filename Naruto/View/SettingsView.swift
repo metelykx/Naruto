@@ -11,7 +11,7 @@ struct SettingsView: View {
     
     @AppStorage("useGrayText") var useGray = false
     var body: some View {
-        Text("ffjfjfjf")
+        Text("Settings")
     }
 }
 
