@@ -22,5 +22,6 @@ extension Text {
         self
             .foregroundStyle(.primary)
             .font(.system(size: 14, weight: .medium, design: .rounded))
+            .opacity(0.8)
     }
 }
