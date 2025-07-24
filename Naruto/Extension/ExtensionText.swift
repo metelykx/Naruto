@@ -10,6 +10,7 @@ import SwiftUI
 
 extension Text {
     
+    //func for change color 
     func colorText() -> Color {
         let useGray = UserDefaults.standard.bool(forKey: "useGrayText")
         if useGray {
