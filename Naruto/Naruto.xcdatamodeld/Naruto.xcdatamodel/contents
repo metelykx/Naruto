@@ -6,7 +6,6 @@
         <attribute name="element" optional="YES" attributeType="String"/>
         <attribute name="gendzusu" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="imageURL" optional="YES" attributeType="String"/>
         <attribute name="intelligence" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="name" optional="YES" attributeType="String"/>
         <attribute name="ninjutsu" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
