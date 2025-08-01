@@ -14,9 +14,6 @@ struct TabBarView: View {
                 Label("Friends", systemImage: "figure.2")
             }
             
-            EnemiesView().tabItem {
-                Label("Enemies", systemImage: "figure.fall")
-            }
             
             AddCharacterView().tabItem{ Label("Add Heroes", systemImage: "person.crop.rectangle.badge.plus.fill")
             }
