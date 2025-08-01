@@ -18,9 +18,13 @@ struct ContentView: View {
             List {
                 ForEach(characters) { character in
                     VStack(alignment: .leading) {
-                        Text(character.name ?? "Без имени")
+                        Text(character.name ?? "No name")
                             .font(.headline)
-                        Text("Клан: \(character.clan ?? "Неизвестно")")
+                        Text("Clan: \(character.clan ?? "Unknown")")
+                            .font(.subheadline)
+                        Text("Element: \(character.element ?? "Unknown")")
+                            .font(.subheadline)
+                        Text("Village: \(character.village ?? "Unknown")")
                             .font(.subheadline)
                     }
                 }
