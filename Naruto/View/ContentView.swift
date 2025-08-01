@@ -1,18 +1,16 @@
-
 import SwiftUI
 import CoreData
 
+
 struct ContentView: View {
-    @AppStorage("useGrayText") var useGray = false
     @Environment(\.managedObjectContext) private var viewContext
-    
-    // Получаем всех персонажей из Core Data
     @FetchRequest(
-        sortDescriptors: [SortDescriptor(\.name)], // сортировка по имени
-        animation: .default)
+        sortDescriptors: [SortDescriptor(\.name)],
+        animation: .default
+    ) private var characters: FetchedResults<Item>
     
-    //result request
-    private var characters: FetchedResults<Item>
+    // Добавим состояние для обновления при изменении цвета
+    @State private var textColorUpdated = false
 
     var body: some View {
         NavigationView {
@@ -20,29 +18,55 @@ struct ContentView: View {
                 ForEach(characters) { character in
                     VStack(alignment: .leading) {
                         Text(character.name ?? "No name")
-                            .font(.headline)
+                            .titleStyle()
+                        
                         Text("Clan: \(character.clan ?? "Unknown")")
-                            .font(.subheadline)
-                            
+                            .descriptionStyle()
+                        
                         Text("Element: \(character.element ?? "Unknown")")
-                            .font(.subheadline)
+                            .descriptionStyle()
+                        
                         Text("Village: \(character.village ?? "Unknown")")
-                            .font(.subheadline)
+                            .descriptionStyle()
+                        
                         Text("Special Power: \(character.specialPower ?? "Unknown")")
-                            .font(.subheadline)
+                            .descriptionStyle()
+                        
                         Text("Assistant: \(character.assistant ?? "Unknown")")
-                            .font(.subheadline)
-                        Text("Power: \(character.power ?? 0)")
-                            .font(.subheadline)
-                        Text("Intelligence: \(character.intelligence ?? 0)")
-                            .font(.subheadline)
+                            .descriptionStyle()
+                        
+                        Text("Power: \(character.power)")
+                            .descriptionStyle()
+                        
+                        Text("Intelligence: \(character.intelligence)")
+                            .descriptionStyle()
                     }
+                    .id(textColorUpdated) // Принудительное обновление при изменении цвета
                 }
             }
             .navigationTitle("Heroes")
             .toolbar {
-                NavigationLink("Add", destination: AddCharacterView())
+                // Кнопка добавления нового персонажа
+                ToolbarItem(placement: .navigationBarTrailing) {
+                    NavigationLink("Add") {
+                        AddCharacterView()
+                    }
+                }
+                
+                // Кнопка изменения цвета текста
+                ToolbarItem(placement: .navigationBarLeading) {
+                    Button(action: toggleTextColor) {
+                        Image(systemName: "paintpalette")
+                    }
+                }
             }
         }
+    }
+    
+    // Функция для переключения цвета текста
+    private func toggleTextColor() {
+        let currentValue = UserDefaults.standard.bool(forKey: "useGrayText")
+        UserDefaults.standard.set(!currentValue, forKey: "useGrayText")
+        textColorUpdated.toggle() // Триггерим обновление View
     }
 }
