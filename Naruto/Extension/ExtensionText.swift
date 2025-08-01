@@ -10,30 +10,23 @@ import SwiftUI
 
 //MARK: Extensions
 extension Text {
-    
-    //func for change color
-    func colorText() -> Color {
+    // Измененный метод для применения цвета
+    func applyTextColor() -> some View {
         let useGray = UserDefaults.standard.bool(forKey: "useGrayText")
-        if useGray {
-            return .white
-        } else {
-            return .gray
-        }
+        return self.foregroundColor(useGray ? .gray : .primary)
     }
     
-    //title
-    func titleFont() -> some View {
+    // Модификатор для заголовка
+    func titleStyle() -> some View {
         self
-            .foregroundStyle(.primary)
+            .applyTextColor() // Применяем цвет
             .font(.system(size: 16, weight: .bold, design: .rounded))
-            .opacity(0.8)
     }
     
-    //description
-    func descriptionFont() -> some View {
+    // Модификатор для описания
+    func descriptionStyle() -> some View {
         self
-            .foregroundStyle(.primary)
+            .applyTextColor() // Применяем цвет
             .font(.system(size: 14, weight: .medium, design: .rounded))
-            .opacity(0.8)
     }
 }

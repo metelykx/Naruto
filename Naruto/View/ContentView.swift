@@ -3,6 +3,7 @@ import SwiftUI
 import CoreData
 
 struct ContentView: View {
+    @AppStorage("useGrayText") var useGray = false
     @Environment(\.managedObjectContext) private var viewContext
     
     // Получаем всех персонажей из Core Data
@@ -22,6 +23,7 @@ struct ContentView: View {
                             .font(.headline)
                         Text("Clan: \(character.clan ?? "Unknown")")
                             .font(.subheadline)
+                            
                         Text("Element: \(character.element ?? "Unknown")")
                             .font(.subheadline)
                         Text("Village: \(character.village ?? "Unknown")")
