@@ -30,12 +30,9 @@ struct ContentView: View {
                             .font(.subheadline)
                         Text("Assistant: \(character.assistant ?? "Unknown")")
                             .font(.subheadline)
-                        Text("Taidzusu: \(character.taidzusu ?? 0)")
-                            .font(.subheadline)
-                        Text("Ninjutsu: \(character.ninjutsu ?? 0)")
-                            .font(.subheadline)
-                        Text("Gendzusu: \(character.gendzusu ?? 0)")
-                            .font(.subheadline)
+                       
+                      
+                        
                         Text("Power: \(character.power ?? 0)")
                             .font(.subheadline)
                         Text("Intelligence: \(character.intelligence ?? 0)")
