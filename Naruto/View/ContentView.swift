@@ -34,6 +34,8 @@ struct ContentView: View {
                             .font(.subheadline)
                         Text("Ninjutsu: \(character.ninjutsu ?? 0)")
                             .font(.subheadline)
+                        Text("Gendzusu: \(character.gendzusu ?? 0)")
+                            .font(.subheadline)
                     }
                 }
             }
