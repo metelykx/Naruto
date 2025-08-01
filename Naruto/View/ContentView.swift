@@ -26,6 +26,8 @@ struct ContentView: View {
                             .font(.subheadline)
                         Text("Village: \(character.village ?? "Unknown")")
                             .font(.subheadline)
+                        Text("Special Power: \(character.specialPower ?? "Unknown")")
+                            .font(.subheadline)
                     }
                 }
             }
