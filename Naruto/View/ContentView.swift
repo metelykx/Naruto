@@ -9,6 +9,8 @@ struct ContentView: View {
     @FetchRequest(
         sortDescriptors: [SortDescriptor(\.name)], // сортировка по имени
         animation: .default)
+    
+    //result request
     private var characters: FetchedResults<Item>
 
     var body: some View {
