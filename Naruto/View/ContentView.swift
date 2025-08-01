@@ -43,9 +43,9 @@ struct ContentView: View {
                     }
                 }
             }
-            .navigationTitle("Персонажи")
+            .navigationTitle("Heroes")
             .toolbar {
-                NavigationLink("Добавить", destination: AddCharacterView())
+                NavigationLink("Add", destination: AddCharacterView())
             }
         }
     }
